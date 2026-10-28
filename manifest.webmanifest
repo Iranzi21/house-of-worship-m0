@@ -1,0 +1,10 @@
+{
+  "name": "House of Worship M0 Spike",
+  "short_name": "HoW M0",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2b3a67",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml"}]
+}
