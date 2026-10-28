@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoW M0 Spike</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HoW M0">
+<meta name="theme-color" content="#2b3a67">
+<style>
+body{font-family:system-ui,sans-serif;margin:12px;max-width:760px}
+h1{font-size:1.2rem} h2{font-size:1rem;margin:16px 0 6px}
+button{padding:10px 12px;margin:3px 3px 3px 0;font-size:1rem}
+input[type=text]{padding:8px;font-size:1rem;width:60%}
+pre{background:#f2f2f2;padding:8px;white-space:pre-wrap;word-break:break-word;font-size:.85rem}
+#log{max-height:300px;overflow:auto}
+</style>
+</head>
+<body>
+<h1>House of Worship: M0 technical spike (test data only)</h1>
+<pre id="info">Loading...</pre>
+
+<h2>1. Test records</h2>
+<input type="text" id="title" placeholder="Test record title">
+<button id="add">Add record</button>
+<button id="refresh">Refresh list</button>
+<pre id="list"></pre>
+
+<h2>2. Export (BK-27 trial)</h2>
+<button id="share">Export and share (email)</button>
+<button id="download">Export as download</button>
+
+<h2>3. Import and Replace (validate, preview, confirm)</h2>
+<input type="file" id="file" accept=".json,application/json">
+<pre id="preview">No file chosen.</pre>
+<label><input type="checkbox" id="fail"> Simulate failure mid-restore (BK-22 trial)</label><br>
+<button id="replace" disabled>Replace library with this backup</button>
+
+<h2>4. Failed-write test</h2>
+<button id="failtest">Run failed-write test</button>
+
+<h2>Log</h2>
+<pre id="log"></pre>
+<script src="app.js"></script>
+</body>
+</html>
