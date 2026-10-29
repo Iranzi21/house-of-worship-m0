@@ -1,4 +1,4 @@
-const APP_VERSION = "M0-v1";
+const APP_VERSION = "M0-v2";
 const DB_NAME = "how-m0", STORE = "records";
 const $ = id => document.getElementById(id);
 const logEl = $("log");
